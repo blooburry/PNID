@@ -1,0 +1,76 @@
+[
+    {
+        "Id": "sha256:26027d4db503adba22613865751d618dd23f8aac639ea74e781b55190df9e10a",
+        "RepoTags": [
+            "custom-ftp-server:latest"
+        ],
+        "RepoDigests": [
+            "custom-ftp-server@sha256:26027d4db503adba22613865751d618dd23f8aac639ea74e781b55190df9e10a"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2024-12-10T14:56:35.731597404Z",
+        "DockerVersion": "27.3.1",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "21/tcp": {},
+                "30000/tcp": {},
+                "30001/tcp": {},
+                "30002/tcp": {},
+                "30003/tcp": {},
+                "30004/tcp": {},
+                "30005/tcp": {},
+                "30006/tcp": {},
+                "30007/tcp": {},
+                "30008/tcp": {},
+                "30009/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "/usr/local/bin/create-users.sh",
+                "/usr/sbin/vsftpd",
+                "/etc/vsftpd.conf"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": null
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 62310447,
+        "GraphDriver": {
+            "Data": null,
+            "Name": "overlayfs"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:301c1bb42cc0bc6618fcaf036e8711f2aad66f76697f541e2014a69e1f456aa4",
+                "sha256:aa5fbb17ad83e741c511385088e0b6019e62959071d1f20a703e81445c9e3571",
+                "sha256:48e629c6437cf1c6ba86ba92d70b75b69e64d8f5f88dcd77bd7089185e6a631c",
+                "sha256:f7defef4a4b31ad7a0d697c8cb6716b7de8e4c57f97cf5ceeb81bdb9cd15b709",
+                "sha256:7da47a3d7bc1b46147c4a055187e851a574fa5717af50bf7548ff6e59d275b08",
+                "sha256:a5e2bf3bbf9f7d3126f592ab8996a2e3b306ab1dc2ec9d78baeb03247453076b"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2024-12-10T15:03:52.885921529Z"
+        }
+    }
+]
